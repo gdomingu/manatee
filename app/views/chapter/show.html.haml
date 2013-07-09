@@ -1,2 +1,9 @@
-%h1 Chapter#show
-%p Find me in app/views/chapter/show.html.haml
+%h1= "Chapter #{@chapter.chaptnum}"
+
+
+
+/ %ul#page_list
+/   -@chapter.pages.reverse_each do |page|
+/     %li#page_link
+/       =link_to "Page #{page.pagenum}", page
+

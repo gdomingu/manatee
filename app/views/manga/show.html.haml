@@ -1,2 +1,7 @@
-%h1 Manga#show
-%p Find me in app/views/manga/show.html.haml
+%h1= "Read #{@manga.name}"
+
+%ul#chapter_list
+  -@manga.chapters.reverse_each do |chapter|
+    %li#chapter_link
+      =link_to "Chapter #{chapter.chaptnum}", chapter
+

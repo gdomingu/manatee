@@ -4,7 +4,7 @@ class MangaController < ApplicationController
   end
 
   def show
-    @manga = Manga.find(params[:manga])
+    @manga = Manga.find(params[:id])
   end
 
   def new
@@ -13,10 +13,11 @@ class MangaController < ApplicationController
 
   def create
    @manga = Manga.new(params[:manga])
-   if @manga.save
-    redirect_to :index
-  else
-    render :new
+     if @manga.save
+      redirect_to :index
+    else
+      render :new
+    end
   end
 
   def edit

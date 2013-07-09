@@ -4,7 +4,7 @@ class ChapterController < ApplicationController
   end
 
   def show
-    @chapter = Chapter.find(params[:chapter])
+    @chapter = Chapter.find(params[:id])
   end
 
   def new
@@ -17,7 +17,7 @@ class ChapterController < ApplicationController
   end
 
   def destroy
-    @chapter = Chapter.find(params[:chapter])
+    @chapter = Chapter.find(params[:id])
     @chapter.destroy
   end
 end

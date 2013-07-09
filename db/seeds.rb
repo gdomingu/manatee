@@ -1,7 +1,35 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+op = Manga.create(name:"One Piece", genre:"shonen")
+Manga.create(name:"Berserk", genre:"shonen")
+Manga.create(name:"Hunter X Hunter", genre:"shonen")
+Manga.create(name:"Magi", genre: "shonen")
+Manga.create(name:"Breaker: New Waves", genre:"shonen")
+
+chapter1 = op.chapters.create(chaptnum:1, manga_id:op.id)
+chapter2 = op.chapters.create(chaptnum:2, manga_id:op.id)
+op.chapters.create(chaptnum:3, manga_id:op.id)
+op.chapters.create(chaptnum:4, manga_id:op.id)
+op.chapters.create(chaptnum:5, manga_id:op.id)
+
+chapter2.pages.create(pagenum:1, chapter_id:2, url:"001.jpg")
+chapter2.pages.create(pagenum:2, chapter_id:2, url:"002.jpg")
+chapter2.pages.create(pagenum:3, chapter_id:2, url:"003.jpg")
+chapter2.pages.create(pagenum:4, chapter_id:2, url:"004.jpg")
+chapter2.pages.create(pagenum:5, chapter_id:2, url:"005.jpg")
+chapter2.pages.create(pagenum:6, chapter_id:2, url:"006.jpg")
+chapter2.pages.create(pagenum:7, chapter_id:2, url:"007.jpg")
+chapter2.pages.create(pagenum:8, chapter_id:2, url:"008.jpg")
+chapter2.pages.create(pagenum:9, chapter_id:2, url:"009.jpg")
+chapter2.pages.create(pagenum:10, chapter_id:2, url:"010.jpg")
+chapter2.pages.create(pagenum:11, chapter_id:2, url:"011.jpg")
+chapter2.pages.create(pagenum:12, chapter_id:2, url:"012.jpg")
+chapter2.pages.create(pagenum:13, chapter_id:2, url:"013.jpg")
+chapter2.pages.create(pagenum:14, chapter_id:2, url:"014.jpg")
+chapter2.pages.create(pagenum:15, chapter_id:2, url:"015.jpg")
+chapter2.pages.create(pagenum:16, chapter_id:2, url:"016.jpg")
+chapter2.pages.create(pagenum:17, chapter_id:2, url:"017.jpg")
+chapter2.pages.create(pagenum:18, chapter_id:2, url:"018.jpg")
+chapter2.pages.create(pagenum:19, chapter_id:2, url:"019.jpg")
+chapter2.pages.create(pagenum:20, chapter_id:2, url:"020.jpg")
+chapter2.pages.create(pagenum:21, chapter_id:2, url:"021.jpg")
+chapter2.pages.create(pagenum:22, chapter_id:2, url:"022.jpg")
+chapter2.pages.create(pagenum:23, chapter_id:2, url:"023.jpg")

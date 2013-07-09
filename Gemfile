@@ -7,7 +7,7 @@ gem 'rails', '3.2.13'
 
 gem 'pg'
 gem 'shoulda-matchers'
-gem 'factory_girl'
+gem 'factory_girl_rails'
 
 group :development do
   gem 'pry-rails'

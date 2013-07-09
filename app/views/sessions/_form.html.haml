@@ -1,0 +1,8 @@
+= form_tag sessions_path do
+  %div.large-4.columns
+    = label_tag :email
+    = text_field_tag :email
+  %div.large-4.columns
+    = label_tag :password
+    = password_field_tag :password
+  = submit_tag "Login"

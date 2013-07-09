@@ -1,0 +1,6 @@
+%h1 Welcome to Hyte Manga
+
+%ul#manga_list_home
+  -@mangas.each do |manga|
+    %li#manga_title
+      =link_to manga.name, manga

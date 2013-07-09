@@ -6,8 +6,7 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
-gem 'shoulda-matchers'
-gem 'factory_girl_rails'
+gem 'zurb-foundation'
 
 group :development do
   gem 'pry-rails'
@@ -34,6 +33,9 @@ gem 'jquery-rails'
 
 group :test, :development do
   gem 'rspec-rails'
+  gem 'shoulda-matchers'
+  gem 'factory_girl_rails'
+  gem 'capybara'
 end
 
 # To use ActiveModel has_secure_password

@@ -1,0 +1,28 @@
+
+development:
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  database: manatee_development
+  pool: 5
+  username: Gabriel
+  password:
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  database: manatee_test
+  pool: 5
+  username: Gabriel
+  password:
+  min_messages: WARNING
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  database: manatee_production
+  pool: 5
+  username: Gabriel
+  password:

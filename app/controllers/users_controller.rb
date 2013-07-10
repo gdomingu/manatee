@@ -21,6 +21,7 @@ class UsersController < ApplicationController
     end
   end
 
+
   # GET /users/new
   # GET /users/new.json
   def new
@@ -44,7 +45,7 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
-        format.html { redirect_to @user, notice: 'User was successfully created.'}
+        format.html { redirect_to root_path, :notice => 'Thank you for registering!'}
         format.json { render json: @user, status: :created, location: @user }
       else
         format.html { render action: "new" }

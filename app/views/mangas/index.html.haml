@@ -2,5 +2,5 @@
 
 %ul#manga_list_home
   -@mangas.each do |manga|
-    %li#manga_title
+    %li{:id => "#{manga.name}"}
       =link_to manga.name, manga

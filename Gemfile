@@ -8,15 +8,6 @@ gem 'rails', '3.2.13'
 gem 'pg'
 gem 'zurb-foundation'
 
-group :development do
-  gem 'pry-rails'
-  gem 'pry-debugger'
-  gem 'better_errors'
-  gem 'binding_of_caller'
-  gem 'meta_request'
-  gem 'haml-rails'
-end
-
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -38,6 +29,11 @@ group :test, :development do
   gem 'capybara'
   gem 'haml-rails'
   gem 'pry-rails'
+  gem 'launchy'
+  gem 'pry-debugger'
+  gem 'binding_of_caller'
+  gem 'meta_request'
+  gem 'better_errors'
 end
 
 # To use ActiveModel has_secure_password
@@ -47,10 +43,13 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 # gem 'jbuilder'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+gem 'unicorn'
 
 # Deploy with Capistrano
 # gem 'capistrano'
 
 # To use debugger
 # gem 'debugger'
+
+gem 'carrierwave'
+gem 'fog'

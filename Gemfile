@@ -8,6 +8,7 @@ gem 'rails', '3.2.13'
 
 gem 'pg'
 gem 'zurb-foundation'
+gem 'haml-rails'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -28,7 +29,6 @@ group :test, :development do
   gem 'shoulda-matchers'
   gem 'factory_girl_rails'
   gem 'capybara'
-  gem 'haml-rails'
   gem 'pry-rails'
   gem 'launchy'
   gem 'pry-debugger'

@@ -1,4 +1,7 @@
 Manatee::Application.routes.draw do
+  resources :chapters
+
+
   resources :mangas
   resources :chapters
   resources :users

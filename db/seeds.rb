@@ -144,7 +144,6 @@ x = 0
 bchapt2.pages.create(pagenum:x+=1, chapter_id:bchapt2.id, url:"https://s3-us-west-2.amazonaws.com/manatee/berserk/chapter1/Berserk+-+v01c02p096-097.jpg")
 bchapt2.pages.create(pagenum:x+=1, chapter_id:bchapt2.id, url:"https://s3-us-west-2.amazonaws.com/manatee/berserk/chapter1/Berserk+-+v01c02p098.jpg")
 bchapt2.pages.create(pagenum:x+=1, chapter_id:bchapt2.id, url:"https://s3-us-west-2.amazonaws.com/manatee/berserk/chapter1/Berserk+-+v01c02p099.jpg")
-bchapt2.pages.create(pagenum:x+=1, chapter_id:bchapt2.id, url:"https://s3-us-west-2.amazonaws.com/manatee/berserk/chapter2/Berserk+-+v01c02p099.jpg")
 bchapt2.pages.create(pagenum:x+=1, chapter_id:bchapt2.id, url:"https://s3-us-west-2.amazonaws.com/manatee/berserk/chapter2/Berserk+-+v01c02p100.jpg")
 bchapt2.pages.create(pagenum:x+=1, chapter_id:bchapt2.id, url:"https://s3-us-west-2.amazonaws.com/manatee/berserk/chapter2/Berserk+-+v01c02p101.jpg")
 bchapt2.pages.create(pagenum:x+=1, chapter_id:bchapt2.id, url:"https://s3-us-west-2.amazonaws.com/manatee/berserk/chapter2/Berserk+-+v01c02p102.jpg")
